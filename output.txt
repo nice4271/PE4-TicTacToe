@@ -1,0 +1,24 @@
+---
+---
+---
+Enter x value:0
+
+Enter y value:0
+
+O--
+---
+---
+Enter x value:0
+
+Enter y value:1
+
+OX-
+---
+---
+Enter x value:2
+
+Enter y value:1
+
+OX-
+---
+-O-
