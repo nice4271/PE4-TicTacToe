@@ -10,20 +10,40 @@ std::vector<std::vector<std::string>> CreateBoard()
     return ret;
 }
 
-void DisplayBoard(std::vector<std::vector<std::string>> matrix)
+void displayBoard(std::vector<std::vector<std::string>> V)
 {
-    for (int i = 0; i < matrix.size(); i++)
+    for (int i = 0; i < V.size(); i++)
     {
-        for (int j = 0; j < matrix[i].size(); j++)
+        for (int j = 0; j < V[i].size(); j++)
         {
-            std::cout << matrix[i][j] << " ";
+            std::cout << V[i][j];
         }
         std::cout << std::endl;
     }
+    return;
+}
+
+std::vector<int> GetPlayerChoice()
+{
+    std::vector<int> ret;
+    int x;
+    std::cout << "Enter x value:";
+    std::cin >> x;
+    ret.push_back(x);
+    std::cout << std::endl;
+    int y;
+    std::cout << "Enter y value:";
+    std::cin >> y;
+    ret.push_back(y);
+    std::cout << std::endl;
+    return ret;
 }
 
 int main()
 {
     std::vector<std::vector<std::string>> matrix = CreateBoard();
-    DisplayBoard(matrix);
+
+    displayBoard(matrix);
+
+    return 0;
 }
