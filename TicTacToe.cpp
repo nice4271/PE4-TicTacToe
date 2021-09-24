@@ -23,6 +23,11 @@ void displayBoard(std::vector<std::vector<std::string>> V)
     return;
 }
 
+void PlaceMarker(std::vector<std::vector<std::string>> &matrix, std::vector<int> choices, std::string turn)
+{
+    matrix[choices[0]][choices[1]] = turn;
+}
+
 std::vector<int> GetPlayerChoice()
 {
     std::vector<int> ret;
